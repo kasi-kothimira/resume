@@ -59,7 +59,7 @@ email: "first.last@example.com"
 
 == Projects
 
-=== 2026 CKC Badge #h(1fr) #link("https://github.com/lockfale/cackalackybadgy2026-dev/")
+=== 2026 CKC Badge #h(1fr) #link("github.com/lockfale/cackalackybadgy2026-dev/")
 - Member of the team that developed the official conference badge for the CKC Security Conference in Raleigh, NC
 - Used C to write firmware for ESP32-based badges, in order to handle WiFi connectivity and communication with the backend servers 
 - Used Kubernetes to run backend servers for the event,  and protecting system integrity from adversarial attacks 
