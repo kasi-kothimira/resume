@@ -9,16 +9,37 @@
 #show link: set text(fill: blue, weight: 500)
 #show link: underline
 
+#let real_identity = (
+first_name: "Ajay",
+last_name: "Kristipati",
+github: "kasi-kothimira",
+linkedin: "ajay-kristipati",
+phone: "+1 (919) 448-7644",
+email: "kristipati.ajay@gmail.com"
+)
+
+// Redacted version for public sharing
+#let redacted_identity = (
+first_name: "First",
+last_name: "Last",
+github: "torvalds",
+linkedin: "richard-stallman",
+phone: "+1 (800) 867-5309",
+email: "first.last@example.com"
+)
+
+#let identity = real_identity
+// #let identity = redacted_identity
 
 // not scoping this align since it breaks HTML output
 #set align(center)
-= Ajay Kristipati
+= #identity.first_name #identity.last_name
 #[
 #set text(weight: 600)
-#link("tel:19194487644")[(919) 448-7644] | #link("mailto:kristipati.ajay@gmail.com")[kristipati.ajay\@gmail.com] | LinkedIn: #link("linkedin.com/in/ajay-kristipati")[ajay-kristipati] | GitHub: #link("kasi-kothimira")[kasi-kothimira]
+#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | LinkedIn: #link("linkedin.com/in/"+identity.linkedin)[#identity.linkedin] | GitHub: #link("https://github.com/"+identity.github)[#identity.github]
 ]
 #set align(left)
-Ajay Kristipati is a passionate software engineer with 4+ years of experience developing secure, compliant software solutions, specializing in cybersecurity and federal compliance (FIPS, Common Criteria). Proven expertise in enhancing software adaptability for public sector clients, with strong skills in cross-functional team collaboration, memory-safe programming languages, and cybersecurity.
+#identity.first_name #identity.last_name is a passionate software engineer with 4+ years of experience developing secure, compliant software solutions, specializing in cybersecurity and federal compliance (FIPS, Common Criteria). Proven expertise in enhancing software adaptability for public sector clients, with strong skills in cross-functional team collaboration, memory-safe programming languages, and cybersecurity.
 
 == Work Experience
 
@@ -43,14 +64,14 @@ Ajay Kristipati is a passionate software engineer with 4+ years of experience de
 - Used C to write firmware for ESP32-based badges, in order to handle WiFi connectivity and communication with the backend servers 
 - Used Kubernetes to run backend servers for the event,  and protecting system integrity from adversarial attacks 
 
-=== PGP2OpenSSH #h(1fr) #link("github.com/kasi-kothimira/pgp2openssh")
+=== PGP2OpenSSH #h(1fr) #link("github.com/" + identity.github + "/pgp2openssh")
  - A Rust Utility to convert PGP keys to OpenSSH format, enhancing interoperability between encryption systems
-=== Mirafetch #h(1fr) #link("github.com/ArgentumCation/mirafetch")[github.com/kasi-kothimira/mirafetch]
+=== Mirafetch #h(1fr) #link("github.com/ArgentumCation/mirafetch")[github.com/ArgentumCation/mirafetch]
 - Created a high-performance cross-platform system monitoring tool in Rust, achieving an 8000% performance boost over similar tools through optimized multithreading.
 === Homelab
 - Built a high-availability container and VM infrastructure using Kubernetes and Proxmox, achieving fault tolerance and efficient resource distribution with reproducible Nix configurations
 - Implemented a distributed storage system using Longhorn
-=== Music Queuing Application #h(1fr) #link("github.com/kasi-kothimira/MusiQueue")
+=== Music Queuing Application #h(1fr) #link("github.com/" + identity.github + "/MusiQueue")
 Developed a Web application to allow groups of people to collaborate on creating playlists at social gatherings
 Used React to create frontend UX
 
