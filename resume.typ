@@ -3,8 +3,8 @@
 #set text(font: "Atkinson Hyperlegible Next", size: 10.5pt, spacing: 80%, weight: 400)
 // Global spacing
 #set par(leading: 0.65em)
-#show heading.where(level: 2): set block(spacing: 0.9em) 
-#show heading.where(level:3): set block(spacing: 0.9em)
+#show heading.where(level: 2): set block(spacing: 0.7em) 
+#show heading.where(level:3): set block(spacing: 0.7em)
 // Link Formatting
 #show link: set text(fill: blue, weight: 500)
 #show link: underline
@@ -39,43 +39,47 @@ email: "first.last@example.com"
 #link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | LinkedIn: #link("linkedin.com/in/"+identity.linkedin)[#identity.linkedin] | GitHub: #link("https://github.com/"+identity.github)[#identity.github]
 ]
 #set align(left)
-#identity.first_name #identity.last_name is a passionate software engineer with 4+ years of experience developing secure, compliant software solutions, specializing in cybersecurity and federal compliance (FIPS, Common Criteria). Proven expertise in enhancing software adaptability for public sector clients, with strong skills in cross-functional team collaboration, memory-safe programming languages, and cybersecurity.
-
+== Education
+=== North Carolina State University, Raleigh, NC #h(1fr) 08/2021 - 12/2023
+Masters in Computer Science
+=== University of Washington, Seattle, WA #h(1fr) 09/2018 - 06/2021
+Bachelor of Science in Computer Science, Minor in Mathematics 
 == Work Experience
 
 === Cisco, Software Engineer #h(1fr) 08/2021 - Present
-
-- Developed and integrated features in Cisco products to achieve federal security certifications including FIPS and IPv6 in order to accelerate public-sector sales 
-- Improved security for Department of Defense applications by implementing Post-Quantum Cryptography in AnyConnect VPN, improving compliance with federal standards
-- Integrated IPv6 support into the Identity Services Engine (ISE) to broaden network protocol capabilities
-- Established a comprehensive testing environment for Linux Kernel Modules across diverse system configurations
-- Streamlined compliance efforts by packaging cryptographic utilities across Cisco offerings like Cisco Unified CallManager (CUCM) and Integrated Service Router (ISR) to meet FIPS standards
-- Backported changes to RSA from OpenSSL 3.x to OpenSSL 1.1.x in order to maintain FIPS Compliance
-- Maintained internal versions of OpenSSL and OpenSSH, and Python in order to facilitate FIPS adoption in Cisco products
+// LESS COMPLIANCE
+- Developed and integrated features in Cisco products to achieve federal security certifications including *FIPS* and IPv6 in order to increase public-sector sales revenue by 20% 
+- Improved security for Department of Defense applications by implementing *Post-Quantum Cryptography* in *AnyConnect VPN*, improving alignment with federal standards
+- Integrated IPv86 support into the Identity *Services Engine (ISE)* to broaden network protocol capabilities
+- Established a comprehensive testing environment for *Linux Kernel* Modules across diverse system configurations
+- Streamlined company-wide security efforts by packaging cryptographic utilities across Cisco offerings like *Cisco Unified CallManager (CUCM)* and *Integrated Service Router (ISR)* to meet FIPS standards
+- Backported changes to *RSA* from *OpenSSL* 3.x to *OpenSSL* 1.1.x in order to maintain FIPS Compliance
+- Maintained internal versions of *OpenSSL* and *OpenSSH*, and Python for use across Cisco products across business units // name a number 
 
 === IBM, Full-Stack Development Intern #h(1fr) 06/2019 - 08/2019
 - Member of IBM Product Development team, focusing on Talent Management and Virtual Training systems for global employees.
-- Collaborated with a global team to develop educational software for users in developing countries, focusing on programming tools like Docker and RHEL, resulting in significant improvements in course completion and retention rates.
+- Created educational software integrating *Docker* and *RHEL* into training modules, improving in course completion rates by 30%.
 
 == Projects
 
 === 2026 CKC Badge #h(1fr) #link("github.com/lockfale/cackalackybadgy2026-dev/")
 - Member of the team that developed the official conference badge for the CKC Security Conference in Raleigh, NC
-- Used C to write firmware for ESP32-based badges, in order to handle WiFi connectivity and communication with the backend servers 
-- Used Kubernetes to run backend servers for the event,  and protecting system integrity from adversarial attacks 
+- Used *C* to write firmware for *ESP32*-based badges, in order to handle WiFi connectivity and communication with the backend servers using *GRPC* and *MQTT*
+- Used *Kubernetes* to run backend servers for the event, and protecting system integrity from adversarial attacks 
 
 === PGP2OpenSSH #h(1fr) #link("github.com/" + identity.github + "/pgp2openssh")
- - A Rust Utility to convert PGP keys to OpenSSH format, enhancing interoperability between encryption systems
+ - A *Rust* Utility to convert *PGP* keys to *OpenSSH* format, enhancing interoperability between encryption systems
 === Mirafetch #h(1fr) #link("github.com/ArgentumCation/mirafetch")[github.com/ArgentumCation/mirafetch]
-- Created a high-performance cross-platform system monitoring tool in Rust, achieving an 8000% performance boost over similar tools through optimized multithreading.
+- Created a high-performance cross-platform system monitoring tool in *Rust*, achieving an 8000% performance boost over similar tools through optimized multithreading.
 === Homelab
-- Built a high-availability container and VM infrastructure using Kubernetes and Proxmox, achieving fault tolerance and efficient resource distribution with reproducible Nix configurations
-- Implemented a distributed storage system using Longhorn
+- Built a high-availability container and VM infrastructure using *Kubernetes* and *Proxmox*, achieving fault tolerance and efficient resource distribution with reproducible *Nix* configurations
+- Implemented a distributed storage system using *Longhorn*, to ensure data redundancy and high availability across multiple nodes
 === Music Queuing Application #h(1fr) #link("github.com/" + identity.github + "/MusiQueue")
-Developed a Web application to allow groups of people to collaborate on creating playlists at social gatherings
-Used React to create frontend UX
+- Developed a Web application to allow groups of people to collaborate on creating playlists at social gatherings
+- Created *React*-based frontend, with *Firebase* backend for real-time updates and data storage 
 
 == Technical Skills
 *Programming Languages:* C, C++ C\#, Go, Java, JavaScript, TypeScript, Python, Rust, Swift
 
 *Technologies:* Agile, Bash, Ceph, Docker, Flask, Jenkins, Kubernetes, Linux, Nix, Proxmox, React
+
