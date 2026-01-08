@@ -36,7 +36,7 @@ email: "first.last@example.com"
 = #identity.first_name #identity.last_name
 #[
 #set text(weight: 600)
-#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | #link("linkedin.com/in/"+identity.linkedin) |  #link("https://github.com/"+identity.github)
+#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | #link("http://linkedin.com/in/"+identity.linkedin) |  #link("https://github.com/"+identity.github)
 ]
 #set align(left)
 == Education
