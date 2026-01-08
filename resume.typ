@@ -3,8 +3,8 @@
 #set text(font: "Atkinson Hyperlegible Next", size: 10.5pt, spacing: 80%, weight: 400)
 // Global spacing
 #set par(leading: 0.65em)
-#show heading.where(level: 2): set block(spacing: 0.7em) 
-#show heading.where(level:3): set block(spacing: 0.7em)
+#show heading.where(level: 2): set block(spacing: 0.8em) 
+#show heading.where(level:3): set block(spacing: 0.8em)
 // Link Formatting
 #show link: set text(fill: blue, weight: 500)
 #show link: underline
