@@ -54,7 +54,7 @@ Bachelor of Science in Computer Science
 - Implemented an *automated regression testing framework* for out-of-tree *Linux kernel modules* across diverse platform configurations and kernel ABIs
 - Streamlined company-wide security efforts by packaging cryptographic utilities across Cisco offerings like *Cisco Unified CallManager (CUCM)* and *Integrated Service Router (ISR)* to meet FIPS standards
 - Backported changes to *RSA* from *OpenSSL* 3.x to *OpenSSL* 1.1.x in order to maintain FIPS Compliance
-- Maintained internal versions of *OpenSSL* and *OpenSSH*, and Python for use across Cisco products across business units // name a number 
+- Maintained internal versions of *OpenSSL* and *OpenSSH*, and *Python* for use across Cisco products across 50+ teams // name a number 
 
 === IBM, Full-Stack Development Intern #h(1fr) 06/2019 - 08/2019
 - Member of IBM Product Development team, focusing on Talent Management and Virtual Training systems for global employees.
