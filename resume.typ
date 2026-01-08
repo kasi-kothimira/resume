@@ -36,14 +36,14 @@ email: "first.last@example.com"
 = #identity.first_name #identity.last_name
 #[
 #set text(weight: 600)
-#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | LinkedIn: #link("linkedin.com/in/"+identity.linkedin)[#identity.linkedin] | GitHub: #link("https://github.com/"+identity.github)[#identity.github]
+#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | #link("linkedin.com/in/"+identity.linkedin) |  #link("https://github.com/"+identity.github)
 ]
 #set align(left)
 == Education
-=== North Carolina State University, Raleigh, NC #h(1fr) 08/2021 - 12/2023
+=== North Carolina State University - Raleigh, NC #h(1fr) 08/2021 - 12/2023
 Masters in Computer Science
-=== University of Washington, Seattle, WA #h(1fr) 09/2018 - 06/2021
-Bachelor of Science in Computer Science, Minor in Mathematics 
+=== University of Washington - Seattle, WA #h(1fr) 09/2018 - 06/2021
+Bachelor of Science in Computer Science
 == Work Experience
 
 === Cisco, Software Engineer #h(1fr) 08/2021 - Present
