@@ -50,8 +50,8 @@ Bachelor of Science in Computer Science
 // LESS COMPLIANCE
 - Developed and integrated features in Cisco products to achieve federal security certifications including *FIPS* and IPv6 in order to increase public-sector sales revenue by 20% 
 - Improved security for Department of Defense applications by implementing *Post-Quantum Cryptography* in *AnyConnect VPN*, improving alignment with federal standards
-- Integrated IPv86 support into the Identity *Services Engine (ISE)* to broaden network protocol capabilities
-- Established a comprehensive testing environment for *Linux Kernel* Modules across diverse system configurations
+- Integrated *IPv6* support into the *Identity Services Engine (ISE)* to broaden network protocol capabilities
+- Implemented an *automated regression testing framework* for out-of-tree *Linux kernel modules* across diverse platform configurations and kernel ABIs
 - Streamlined company-wide security efforts by packaging cryptographic utilities across Cisco offerings like *Cisco Unified CallManager (CUCM)* and *Integrated Service Router (ISR)* to meet FIPS standards
 - Backported changes to *RSA* from *OpenSSL* 3.x to *OpenSSL* 1.1.x in order to maintain FIPS Compliance
 - Maintained internal versions of *OpenSSL* and *OpenSSH*, and Python for use across Cisco products across business units // name a number 
@@ -62,22 +62,22 @@ Bachelor of Science in Computer Science
 
 == Projects
 
-=== 2026 CKC Badge #h(1fr) #link("github.com/lockfale/cackalackybadgy2026-dev/")
+=== #link("http://github.com/lockfale/cackalackybadgy2026-dev/")[2026 CKC Badge] #h(1fr) Dec 2025 - May 2026 
 - Member of the team that developed the official conference badge for the CKC Security Conference in Raleigh, NC
 - Used *C* to write firmware for *ESP32*-based badges, in order to handle WiFi connectivity and communication with the backend servers using *GRPC* and *MQTT*
 - Used *Kubernetes* to run backend servers for the event, and protecting system integrity from adversarial attacks 
 
-=== PGP2OpenSSH #h(1fr) #link("github.com/" + identity.github + "/pgp2openssh")
+=== #link("http://github.com/" + identity.github + "/pgp2openssh")[PGP2OpenSSH] #h(1fr) Nov 2025 
  - A *Rust* Utility to convert *PGP* keys to *OpenSSH* format, enhancing interoperability between encryption systems
-=== Mirafetch #h(1fr) #link("github.com/ArgentumCation/mirafetch")[github.com/ArgentumCation/mirafetch]
+=== #link("https://github.com/ArgentumCation/mirafetch")[Mirafetch] #h(1fr) Jul 2023 - Present  
 - Created a high-performance cross-platform system monitoring tool in *Rust*, achieving an 8000% performance boost over similar tools through optimized multithreading.
-=== Homelab
+=== Homelab #h(1fr) Jan 2021 - Present
 - Built a high-availability container and VM infrastructure using *Kubernetes* and *Proxmox*, achieving fault tolerance and efficient resource distribution with reproducible *Nix* configurations
 - Implemented a distributed storage system using *Longhorn*, to ensure data redundancy and high availability across multiple nodes
-=== Music Queuing Application #h(1fr) #link("github.com/" + identity.github + "/MusiQueue")
-- Developed a Web application to allow groups of people to collaborate on creating playlists at social gatherings
-- Created *React*-based frontend, with *Firebase* backend for real-time updates and data storage 
-
+// === Music Queuing Application #h(1fr) #link("github.com/" + identity.github + "/MusiQueue")
+// - Developed a Web application to allow groups of people to collaborate on creating playlists at social gatherings
+// - Created *React*-based frontend, with *Firebase* backend for real-time updates and data storage 
+//
 == Technical Skills
 *Programming Languages:* C, C++ C\#, Go, Java, JavaScript, TypeScript, Python, Rust, Swift
 
