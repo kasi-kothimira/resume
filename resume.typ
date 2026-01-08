@@ -31,17 +31,23 @@ email: "first.last@example.com"
 #let identity = real_identity
 // #let identity = redacted_identity
 
+
+// TODO: add bio to linkedin
+// Update linkedin projects
+// sync resume with linkedin
+// add NCSU and UW classes 
+
 // not scoping this align since it breaks HTML output
 #set align(center)
 = #identity.first_name #identity.last_name
 #[
 #set text(weight: 600)
-#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | #link("http://linkedin.com/in/"+identity.linkedin) |  #link("https://github.com/"+identity.github)
+#link("tel:"+ identity.phone.replace(regex("[-+ \(\)]"),""))[#identity.phone] | #link("mailto:"+identity.email)[#identity.email] | #link("http://linkedin.com/in/"+identity.linkedin)[linkedin.com/in/+#identity.linkedin] |  #link("https://github.com/"+identity.github)[github.com/#identity.github]
 ]
 #set align(left)
 == Education
 === North Carolina State University - Raleigh, NC #h(1fr) 08/2021 - 12/2023
-Masters in Computer Science
+Masters in Computer Science with Concentration in Cybersecurity
 === University of Washington - Seattle, WA #h(1fr) 09/2018 - 06/2021
 Bachelor of Science in Computer Science
 == Work Experience
