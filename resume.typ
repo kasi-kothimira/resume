@@ -15,8 +15,8 @@
     identity.redacted_identity
 } else if identity_arg == "mira" {
     identity.mira_identity
-} else if identity_arg == "real" {
-    identity.real_identity
+} else if identity_arg == "legal" {
+    identity.legal_identity
 }
 
 // TODO: add bio to linkedin
@@ -69,7 +69,7 @@ Bachelor of Science in Informatics
 - Implemented a distributed storage system using *Longhorn*, to ensure data redundancy and high availability across multiple nodes
 // === Music Queuing Application #h(1fr) #link("github.com/" + identity.github + "/MusiQueue")
 // - Developed a Web application to allow groups of people to collaborate on creating playlists at social gatherings
-// - Created *React*-based frontend, with *Firebase* backend for real-time updates and data storage 
+// - Created *React*-based frontend, with *Firebase* backend for legal-time updates and data storage 
 //
 == Technical Skills
 *Programming Languages:* C, C++ C\#, Go, Java, JavaScript, TypeScript, Python, Rust, Swift

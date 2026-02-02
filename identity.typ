@@ -1,4 +1,4 @@
-#let real_identity = (
+#let legal_identity = (
 first_name: "Ajay",
 last_name: "Kristipati",
 github: "kasi-kothimira",

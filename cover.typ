@@ -15,8 +15,8 @@
     identity.redacted_identity
 } else if identity_arg == "mira" {
     identity.mira_identity
-} else if identity_arg == "real" {
-    identity.real_identity
+} else if identity_arg == "legal" {
+    identity.legal_identity
 }
 
 #let position_name = "POSITION_NAME"
